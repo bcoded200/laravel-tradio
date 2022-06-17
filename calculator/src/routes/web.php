@@ -8,4 +8,5 @@ Route::group(['namespace'=> 'Chris\Calculator'], function() {
 Route::get('/calculate',[CalcController::class,'index'])->name('calculate');
 
 
+
 });

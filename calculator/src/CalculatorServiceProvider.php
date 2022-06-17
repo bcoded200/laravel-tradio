@@ -11,7 +11,10 @@ class CalculatorServiceProvider extends ServiceProvider
 
     $this->publishes([
         __DIR__.'/config/codedcalculate.php' => config_path('codedcalculate.php'),
+        __DIR__.'/resources/views' => resource_path('views/codedweb/test'),
     ]);
+
+
 
     $this->loadViewsFrom(__DIR__.'/resources/views', 'calculator');
 

@@ -16,10 +16,9 @@
         "psr-4": {
 
             "Chris\\Calculator\\": "/src"
-        },
-        "files": [
-            "app/helpers.php"
-        ]
+
+        }
+
     },
 
     "extra": {
