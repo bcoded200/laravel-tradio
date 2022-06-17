@@ -1,0 +1,33 @@
+{
+    "name": "package/calculator",
+    "description": "a laravel package that calculates the return on investment, earnings and net profits very useful for autotrading hyip,investment and trading websites. ",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chris&lucy",
+            "email": "dakingeorge58@gmail.com",
+            "Website": "www.codedwebltd.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+
+            "Chris\\Calculator\\": "/src"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chris\\Calculator\\CalculatorServiceProvider"
+            ],
+            "aliases": {
+                "Calculator": "Chris\\Calculator\\Facade"
+            }
+        }
+    }
+}
