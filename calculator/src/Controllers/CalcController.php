@@ -16,10 +16,15 @@ class CalcController extends Controller
 
     public function index()
     {
-        $date = $this->Date();
+        $d = $this->Date();
+        $inv = "10days";
+
+        $t = $this->GetIncrementTime($inv);
+
+        $b =  $this->GetnextProfitsDate($t);
 
          return view('calculator::calc',compact(
-            'date'
+            'd','t','b'
          ));
     }
 
@@ -63,6 +68,13 @@ class CalcController extends Controller
         $increment_time = $numofdays;//increment after ?
         $increment_time = str_replace(["day",'days'], " ",$increment_time);
        return  $increment_time = intval($increment_time);
+    }
+
+    public function GetnextProfitsDate($numofdays)
+    {
+        $next_profit_date = date('Y-m-d h:i:s',strtotime("+$numofdays day", strtotime($this->Date())));
+
+        return $next_profit_date;
     }
 
 

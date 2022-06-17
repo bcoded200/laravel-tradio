@@ -1,13 +1,12 @@
 {
     "name": "laraveltradio/calculator",
-    "description": "a laravel package that calculates the return on investment, earnings and net profits very useful for autotrading hyip,investment and trading websites. ",
+    "description": "a laravel package that calculates the return on investment, earnings and net profits very useful for autotrading hyip,investment and trading websites.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "chris&lucy",
-            "email": "dakingeorge58@gmail.com",
-            "Website": "www.codedwebltd.com"
+            "name": "codedwebltd",
+            "email": "dakingeorge58@gmail.com"
         }
     ],
     "minimum-stability": "dev",
@@ -17,7 +16,10 @@
         "psr-4": {
 
             "Chris\\Calculator\\": "/src"
-        }
+        },
+        "files": [
+            "app/helpers.php"
+        ]
     },
 
     "extra": {
